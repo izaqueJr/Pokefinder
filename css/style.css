@@ -2,7 +2,7 @@ body{
   display: flex;
   border: none;
   justify-content: center;
-  background-color:#F2F2F2;
+  background-color:#dddbdb;
 }
 
 section {
@@ -17,9 +17,11 @@ input{
   width: 300px;
   height: 32px;
   border-radius: 12px;
-  font-size: 1rem;
+  font-size: 18px;
   padding: 8px;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  
 }
 
 
@@ -43,6 +45,8 @@ div#checkType{
   flex: 1;
   align-items: center;
   justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+  width: 400;
 
 }
 
@@ -80,28 +84,26 @@ width: 200px;
 
 
 button{
-  background-repeat:no-repeat;
-  background-size: 38px;
-  background-color: none;
-  background-image: url("/img/14968.png");
-
-  margin-top: 5px;
+  background: none;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  
   margin-left: 18px;
   border-radius: 12px;
-  width: 70px;
+  width: 98px;
   height: 48px;
-  border: none;
+
  
 }
 
-button:focus, input:focus{
+ input:focus{
   outline: none;
 
 }
 button:hover{
-
-  background-image: url("/img/17435.png");
-  background-size: 42px;
+  width: 102px;
+  height: 50px;
+  font-size: 22px;
 }
 
 
@@ -112,4 +114,41 @@ h1{
   font-weight: 1500;
   font-family: 'Ubuntu', sans-serif;
   
+}
+
+@media screen and (max-width: 500px){
+  input{
+
+    width: 250px;
+    height: 24px;
+    
+    font-size: 16px;
+    padding: 8px;
+  
+  
+  }
+  
+  div#checkType{
+    font-size: 14px;
+    margin-top: 8px;
+    margin-right: 200px;
+   
+  }
+
+  button{
+    font-size: 18px; 
+    height: 42px;
+    padding: 8px;
+
+    margin-left: 12px;
+    
+  }
+  button:hover{
+    font-size: 22px; 
+    height: 44px;
+    padding: 8px;
+
+    margin-left: 12px;
+    
+  }
 }
