@@ -1,27 +1,54 @@
+
+
+*{
+  margin: 0%;
+  padding: 0%;
+  border: none;
+}
+
 body{
   display: flex;
   border: none;
   justify-content: center;
-  background-color:#dddbdb;
+  background-color: #F1D5AF;
 }
 
+
 section {
-  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+}
+
+section section{
+  background-color: #323D48;
+  width: 1000%;
+  height: 100%;
 }
 
 input{
+  margin: 0;
+  padding: 0;
   background: none;
   width: 300px;
+  color: rgb(247, 243, 243);
   height: 32px;
-  border-radius: 12px;
-  font-size: 18px;
+  border-top-left-radius:16px ;
+  border-bottom-left-radius: 16px;
+  border: solid 2px  #0f0f0fbb;
+  font-size: 24px;
   padding: 8px;
   text-align: center;
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
   
+}
+
+input::placeholder {
+  color: rgba(252, 252, 252, 0.877);
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 
 
@@ -31,42 +58,55 @@ input#type{
  
 }
 
+
+
 div#findDiv{
+  margin-top: 130px;
   display: flex;
   flex: 1;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+
 }
 
 div#checkType{
-  margin-top: 8px;
-  margin-right: 260px;
+  color: rgba(240, 248, 255, 0.849);
   display: flex;
   flex: 1;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   font-family: 'Raleway', sans-serif;
-  width: 400;
-
+  width: 400px;
+  margin-top: 15px;
+  margin-bottom: 100px;
+  letter-spacing: 2px;
 }
 
+input#type{
+  margin-left: 15px;
+}
 div#poke{
+  margin: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 div#poke div {
-  margin: 40px 50px 0px 50px;
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px;
+  margin-right: 15px;
 }
 
 div#poke div div{
-  margin: 0;
+
 }
 
 
@@ -84,14 +124,22 @@ width: 200px;
 
 
 button{
-  background: none;
+  
+  color: rgb(14, 5, 5);
+  background-color: #f8996d;
   font-size: 20px;
   font-family: 'Raleway', sans-serif;
   
-  margin-left: 18px;
-  border-radius: 12px;
+
+  border-top-right-radius:16px ;
+  border-top-right-radius:16px ;
+  border-bottom-right-radius: 16px;
+
+  border-bottom: solid 2px  #0f0f0fbb;
+  border-top: solid 2px  #0f0f0fbb;
+  border-right: solid 2px  #0f0f0fbb;
   width: 98px;
-  height: 48px;
+  height: 52px;
 
  
 }
@@ -102,8 +150,9 @@ button{
 }
 button:hover{
   width: 102px;
-  height: 50px;
+  height: 52px;
   font-size: 22px;
+  color: black;
 }
 
 
@@ -117,38 +166,53 @@ h1{
 }
 
 @media screen and (max-width: 500px){
-  input{
-
-    width: 250px;
+  div#findDiv{
+    margin-top: 100px;
+  }
+  input#find{
+    margin-left: 20px;
+    width: 190px;
     height: 24px;
     
-    font-size: 16px;
+    font-size: 18px;
     padding: 8px;
   
-  
   }
+
+
+  input::placeholder {
+ 
+    font-size: 12px;
+  }
+  
   
   div#checkType{
     font-size: 14px;
-    margin-top: 8px;
-    margin-right: 200px;
+    margin-left: 135px;
+   
    
   }
-
+  
   button{
-    font-size: 18px; 
-    height: 42px;
-    padding: 8px;
-
-    margin-left: 12px;
+    font-size: 16px; 
+    width: 80px;
+    height: 44px;
     
   }
   button:hover{
-    font-size: 22px; 
-    height: 44px;
-    padding: 8px;
+    width: 82;
+    font-size: 18px;
+  }
 
-    margin-left: 12px;
+  div#poke img{
+    width: 130px;
     
+    }
+  
+  div#poke{
+  margin: 80px;
+  }
+  div#poke div{
+    margin-bottom: 40px;
   }
 }

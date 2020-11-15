@@ -2,7 +2,9 @@
 function findPokemon() {
   document.getElementById("poke").innerHTML = ""
 
-  let valuePoke = document.getElementById('find').value
+  let valuePokemon = document.getElementById('find').value
+  let valuePoke = valuePokemon.toLowerCase()
+
   console.log(valuePoke)
 
   const check = document.getElementById("type")
