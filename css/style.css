@@ -14,7 +14,7 @@ section {
 
 input{
   background: none;
-  width: 350px;
+  width: 300px;
   height: 32px;
   border-radius: 12px;
   font-size: 1rem;
@@ -37,6 +37,8 @@ div#findDiv{
 }
 
 div#checkType{
+  margin-top: 8px;
+  margin-right: 260px;
   display: flex;
   flex: 1;
   align-items: center;
@@ -78,17 +80,18 @@ width: 200px;
 
 
 button{
-  background-image: url("/img/fin.png");
   background-repeat:no-repeat;
   background-size: 38px;
-
-  margin-left: 12px;
-
-  width: 42px;
-  height: 42px;
-
-  border: none;
   background-color: none;
+  background-image: url("/img/14968.png");
+
+  margin-top: 5px;
+  margin-left: 18px;
+  border-radius: 12px;
+  width: 70px;
+  height: 48px;
+  border: none;
+ 
 }
 
 button:focus, input:focus{
@@ -96,14 +99,9 @@ button:focus, input:focus{
 
 }
 button:hover{
-  border: none;  
+
+  background-image: url("/img/17435.png");
   background-size: 42px;
-
-  margin-left: 8px;
-
-  width: 42px;
-  height: 42px;
-
 }
 
 
