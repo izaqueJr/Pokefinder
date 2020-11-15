@@ -22,9 +22,18 @@ input{
   text-align: center;
 }
 
+
+
 input#type{
   width: 20px;
  
+}
+
+div#findDiv{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
 }
 
 div#checkType{
@@ -105,9 +114,4 @@ h1{
   font-weight: 1500;
   font-family: 'Ubuntu', sans-serif;
   
-}
-
-img{
-  width: 350px;
-
 }
