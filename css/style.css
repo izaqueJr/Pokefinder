@@ -1,0 +1,113 @@
+body{
+  display: flex;
+  border: none;
+  justify-content: center;
+  background-color:#F2F2F2;
+}
+
+section {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input{
+  background: none;
+  width: 350px;
+  height: 32px;
+  border-radius: 12px;
+  font-size: 1rem;
+  padding: 8px;
+  text-align: center;
+}
+
+input#type{
+  width: 20px;
+ 
+}
+
+div#checkType{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+div#poke{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div#poke div {
+  margin: 40px 50px 0px 50px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div#poke div div{
+  margin: 0;
+}
+
+
+
+div#poke h2{
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 0.15rem;
+
+}
+div#poke img{
+width: 200px;
+
+}
+
+
+button{
+  background-image: url("/img/fin.png");
+  background-repeat:no-repeat;
+  background-size: 38px;
+
+  margin-left: 12px;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  background-color: none;
+}
+
+button:focus, input:focus{
+  outline: none;
+
+}
+button:hover{
+  border: none;  
+  background-size: 42px;
+
+  margin-left: 8px;
+
+  width: 42px;
+  height: 42px;
+
+}
+
+
+h1{
+  margin-right: 54px;
+  margin-top: 60px;
+  font-size: 2.3rem;
+  font-weight: 1500;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+
+img{
+  width: 350px;
+
+}
