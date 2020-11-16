@@ -9,22 +9,22 @@
 body{
   display: flex;
   border: none;
-  justify-content: center;
   background-color: #F1D5AF;
+  display: flex;
+ 
 }
 
-
-section {
+section{
   display: flex;
+  flex: 1;
+  width: 100%;
   flex-direction: column;
   align-items: center;
-  
 }
 
-section section{
+section#color{
   background-color: #323D48;
-  width: 1000%;
-  height: 100%;
+
 }
 
 input{
@@ -63,10 +63,8 @@ input#type{
 div#findDiv{
   margin-top: 130px;
   display: flex;
-  flex: 1;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
 
 }
@@ -75,13 +73,14 @@ div#checkType{
   color: rgba(240, 248, 255, 0.849);
   display: flex;
   flex: 1;
-  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: start;
+
+  
   font-family: 'Raleway', sans-serif;
   width: 400px;
   margin-top: 15px;
-  margin-bottom: 100px;
+  margin-bottom: 130px;
   letter-spacing: 2px;
 }
 
@@ -165,32 +164,44 @@ h1{
   
 }
 
-@media screen and (max-width: 500px){
-  div#findDiv{
-    margin-top: 100px;
-  }
-  input#find{
-    margin-left: 20px;
-    width: 190px;
-    height: 24px;
+@media screen and (max-width: 505px){
+  div#poke img{
+    width: 170px;
     
-    font-size: 18px;
-    padding: 8px;
+    }
   
+  div#poke{
+  margin: 40px 30px;
+  }
+
+  div#poke div{
+    margin-bottom: 40px;
+    margin-right: 27px;
+  }
+
+}
+
+@media screen and (max-width: 450px){
+ 
+  input#find{
+    width: 250px;
+    height: 28px;
+    font-size: 18px;
   }
 
 
   input::placeholder {
- 
+
     font-size: 12px;
   }
   
-  
+  div#findDiv{
+    margin-top: 100px;
+  }
   div#checkType{
+    margin-left: 60px;
     font-size: 14px;
-    margin-left: 135px;
-   
-   
+    margin-bottom: 80px;
   }
   
   button{
@@ -210,9 +221,11 @@ h1{
     }
   
   div#poke{
-  margin: 80px;
+  margin: 40px 10px;
   }
+
   div#poke div{
     margin-bottom: 40px;
+    margin-right: 27px;
   }
 }
