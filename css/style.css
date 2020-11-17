@@ -32,8 +32,7 @@ section#color{
 }
 
 input{
-  margin: 0;
-  padding: 0;
+  
   background: none;
   width: 300px;
   color: rgb(247, 243, 243);
@@ -78,11 +77,11 @@ div#checkType{
   display: flex;
   flex: 1;
   align-items: center;
-  justify-content: start;
-
   
+  
+
   font-family: 'Raleway', sans-serif;
-  width: 400px;
+ 
   margin-top: 15px;
   margin-bottom: 130px;
   letter-spacing: 2px;
@@ -90,10 +89,13 @@ div#checkType{
 
 input#type{
   margin-left: 15px;
+  margin-right:150px ;
 }
+
 div#poke{
-  margin: 40px;
+  margin: 20px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -102,15 +104,15 @@ div#poke div {
   border: solid 3px rgba(0, 0, 0, 0.486);
   border-radius: 20px;
 
-  width: 250px;
-
+  width: 200px;
   display: flex;
-  flex: 1;
+  
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  margin-right: 15px;
+  
+  
+  margin: 10px;
+  
 }
 
 
@@ -120,7 +122,7 @@ div#poke div div{
 
 
 div#poke img{
-width: 200px;
+width: 180px;
 }
 
 
@@ -159,9 +161,8 @@ button:hover{
 
 h2{
   border-bottom: rgba(0, 0, 0, 0.24) solid 2px;
-  width: 95%;
+  width: 90%;
   padding: 10px;
-
 
   margin-bottom: 10px;
   font-size: 1.5rem;
@@ -171,11 +172,19 @@ h2{
   letter-spacing: 0.15rem;
 }
 
+
+
+
+
 @media screen and (max-width: 505px){
   div#poke img{
     width: 150px;
     
     }
+
+  div#checkType{
+    margin-bottom: 100px;
+  }
   
   div#poke{
   margin: 40px 20px;
@@ -186,7 +195,12 @@ h2{
     margin-right: 16px;
     width: 160px;
   }
-
+  h2{
+    width: 90%;
+  
+    font-size: 1rem;
+    
+  }
 }
 
 @media screen and (max-width: 450px){
@@ -197,10 +211,7 @@ h2{
     font-size: 18px;
   }
 
-  h2{
-    font-size: 1rem;
-  }
-
+  
   input::placeholder {
     font-size: 12px;
   }
@@ -208,12 +219,7 @@ h2{
   div#findDiv{
     margin-top: 100px;
   }
-  div#checkType{
-    margin-left: 60px;
-    font-size: 14px;
-    margin-bottom: 80px;
-  }
-  
+ 
   button{
     font-size: 16px; 
     width: 80px;
@@ -224,37 +230,67 @@ h2{
     width: 82;
     font-size: 18px;
   }
-
+  
+  h2{
+    font-size: 1rem;
+  }
   div#poke img{
     width: 130px;
     
     }
   
   div#poke{
-  margin: 40px 10px;
+  margin: 20px 10px;
   }
 
   div#poke div{
-    margin-bottom: 40px;
-    margin-right: 27px;
+    margin: 10px;
   }
 }
 
 
-@media screen and (max-width: 402px){
-section{
-  width: 150%;
-}
+@media screen and (max-width: 410px){
 
-
-
-div#poke{
-margin: 40px 40px;
-}
-
-div#poke div{
-  margin-bottom: 40px;
+  input#find{
+    width: 200px;
+    height: 24px;
+    font-size: 18px;
   
-  width: 140px;
-}
-}
+  }
+  
+  
+  input::placeholder {
+    font-size: 11px;
+  }
+  
+  
+  
+  button{
+    font-size: 16px; 
+    width: 80px;
+    height: 44px;
+    
+  }
+  button:hover{
+  
+    font-size: 18px;
+  }
+  
+  input#type{
+    margin-right:120px ;
+  }
+
+  div#poke img{
+    width: 120px;
+    }
+  
+  div#poke{
+  margin: 20px 10px;
+  }
+
+  div#poke div{
+    width: 140px;
+    margin: 10px;
+  }
+  
+  }
