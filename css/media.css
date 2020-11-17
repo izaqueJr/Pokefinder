@@ -1,0 +1,123 @@
+@media screen and (max-width: 505px){
+  div#poke img{
+    width: 150px;
+    
+    }
+
+  div#checkType{
+    margin-bottom: 100px;
+  }
+  
+  div#poke{
+  margin: 40px 20px;
+  }
+
+  div#poke div{
+    margin-bottom: 40px;
+    margin-right: 16px;
+    width: 160px;
+  }
+  h2{
+    width: 90%;
+  
+    font-size: 1rem;
+    
+  }
+}
+
+
+
+
+@media screen and (max-width: 450px){
+ 
+  input#find{
+    width: 250px;
+    height: 28px;
+    font-size: 18px;
+  }
+
+  
+  input::placeholder {
+    font-size: 12px;
+  }
+  
+  div#findDiv{
+    margin-top: 100px;
+  }
+ 
+  button{
+    font-size: 16px; 
+    width: 80px;
+    height: 44px;
+    
+  }
+  button:hover{
+    width: 82;
+    font-size: 18px;
+  }
+  
+  h2{
+    font-size: 1rem;
+  }
+  div#poke img{
+    width: 130px;
+    
+    }
+  
+  div#poke{
+  margin: 20px 10px;
+  }
+
+  div#poke div{
+    margin: 10px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 410px){
+
+  input#find{
+    width: 200px;
+    height: 24px;
+    font-size: 18px;
+  
+  }
+  
+  
+  input::placeholder {
+    font-size: 11px;
+  }
+  
+  
+  
+  button{
+    font-size: 16px; 
+    width: 80px;
+    height: 44px;
+    
+  }
+  button:hover{
+  
+    font-size: 18px;
+  }
+  
+  input#type{
+    margin-right:120px ;
+  }
+
+  div#poke img{
+    width: 120px;
+    }
+  
+  div#poke{
+  margin: 20px 10px;
+  }
+
+  div#poke div{
+    width: 140px;
+    margin: 10px;
+  }
+  
+  }

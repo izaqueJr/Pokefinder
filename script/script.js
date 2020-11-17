@@ -14,9 +14,8 @@ function findPokemon() {
       .then((response) => {
         return response.json()
       }).then((jsonParsed) => {
-        const pokeNum = jsonParsed.pokemon
-        console.log(pokeNum)
-        for (let i = 0; i < pokeNum.length; i++) {
+        const allPokeNumber = jsonParsed.pokemon
+        for (let i = 0; i < allPokeNumber.length; i++) {
           valuePoke = jsonParsed.pokemon[i].pokemon.name
           createPokemon(valuePoke)
         }
@@ -24,7 +23,6 @@ function findPokemon() {
 
   } else {
     createPokemon(valuePoke)
-
   }
 
 
@@ -34,39 +32,31 @@ function findPokemon() {
       .then((response) => {
         return response.json()
       }).then((poketeste) => {
-        console.log(poketeste)
+
+        const divBoxPoke = document.createElement("div")
         const name = poketeste.name.toUpperCase()
-        console.log(name)
+        const nameTitle = document.createElement("h2");
+        const image = document.createElement("img")
+        const divImageNotFound = document.createElement("div")
 
-        const pai = document.createElement("div")
-        let nome = document.createElement("h2");
-        const foto = document.createElement("img")
-        const filho = document.createElement("div")
-
-        nome.innerHTML = name
+        nameTitle.innerHTML = name
         const imgValue = poketeste.sprites.other["official-artwork"].front_default
 
         if (imgValue == null) {
-          foto.src = "img/notfound.png"
-          let legenda = document.createElement("P")
-          legenda.innerHTML = "Imagem não encontrada :("
-          filho.appendChild(legenda)
+          image.src = "img/notfound.png"
+          let subtitleImgNotFound = document.createElement("P")
+          subtitleImgNotFound.innerHTML = "Imagem não encontrada :("
+          divImageNotFound.appendChild(subtitleImgNotFound)
 
         } else {
-          foto.src = imgValue
+          image.src = imgValue
         }
 
-        document.getElementById("poke").appendChild(pai)
-        pai.appendChild(nome)
-        pai.appendChild(foto)
-        pai.appendChild(filho)
-
-        console.log(foto)
-
-
+        document.getElementById("poke").appendChild(divBoxPoke)
+        divBoxPoke.appendChild(nameTitle)
+        divBoxPoke.appendChild(image)
+        divBoxPoke.appendChild(divImageNotFound)
       })
-
   }
-
 }
 
